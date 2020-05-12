@@ -1,0 +1,232 @@
+<! DOCTYPE html>
+<html>
+<head>
+        <title>Erick</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+        <script type="text/javascript">
+
+                //Menu Toggle Button
+
+                $(document).ready(function(){
+                        $('.menu-icon').on("click", function(){
+                                $("nav ul").toggleClass("showing")
+                        });
+                });
+
+                //Scrolling Effect
+                $(window).on("scroll", function(){
+                        if ($(window).scrollTop()){
+                                $('nav').addClass('black');
+                        }
+                        else{
+                                $('nav').removeClass('black');
+                        }
+                }) ;
+        </script>
+</head>
+<body>
+        <div>
+                <div class='wrapper'>
+                        <header>
+                                <nav class='stick'>
+                                        <div class='erick'>E.Y</div>
+                                        <div class='menu'>
+                                                <ul>
+                                                        <li><a href='#AB'>About Me</a></li>
+                                                        <li><a href='#pp'>Projects and Passions</a></li>
+                                                        <li><a href='#Exp'>Experiences</a></li>
+                                                        <li><a class='active' href='#bottom'>Contact</a></li>
+                                                </ul>
+                                        </div>
+                                </nav>
+                        </header>
+                </div>
+
+                <div id="pbox">
+                        <img src='Images/Me22.jpg' >
+                        <img src='Images/bIKE.jpg' >
+                        <img src='Images/Leader21.jpg' >
+                        <h1>Erick Yan</h1>
+                        <h2>Student. Explorer. Leader.</h2>
+                </div>
+                <div class="Quote">
+                        <blockquote cite="https://www.goodreads.com/quotes/tag/patience">"Learn from yesterday, live for today, look to tomorrow, rest this afternoon."</blockquote>
+                        <p  id = 'AB' type='hello'> - Charles Schulz</p>
+                </div >
+                <div class='firstflex'>
+                        <div class='swiss'>
+                                <img src="Images/MeA.jpg">
+                        </div>
+                        <div  class='info'>
+                                <h2>ABOUT ME</h2>
+                                <p>Hi, Erick here, and on my left is 14 year old me. Fresh off of quitting piano lessons, I was
+                                entering my first year in high school, living out my youth to its fullest with no concern for the future at all. 5 years later,
+                        I ended up as a Chemical Engineering student at the University of Waterloo with hobbies and interests
+                that extend past my program. My drive to expand my experiences and develop new skills has never been more profound than now, as I
+                continue to search for my true career aspiration. I hope this website will help you get to know me a little better as a person.</p>
+                                <br>
+                        </div>
+                </div>
+
+                <div id = 'pp' class='clr'></div>
+
+                <div class='clr'></div>
+
+                <div>
+                        <h2 class='P-and-P'>PROJECTS & PASSIONS</h2>
+                </div>
+                <div class='black-box'>
+                        <div class='pando'>
+                                <img src="Images/Ludo.jpg">
+                                <h2 type='piano'>Music</h2>
+                                <p>Although I received Honours for the RCM Advanced Rudiments Theory Exam,
+                                        Grade 8 Piano Exam and various Piano Competitions, playing piano has always felt empty. After quitting
+                                        in 2014, I shortly regained my passion after watching a few YouTube videos. Artists such as
+                                        Ludovico Einaudi, Giovanni Allevi and Yiruma introduced entirely new genres of music to me. In recent years,
+                                        I have discovered new meaning within the classical pieces I onced loathed through Chopin and Schubert.
+                                        Having quit for 5 years, I have continued my piano education and training on my own, hoping to
+                                        return one day to finish where I left off.</p>
+                        </div>
+                        <div class='pando'>
+                                <img src="Images/CP3.jpg">
+                                <h2 type='ball'>Basketball</h2>
+                                <p>After going through the "I'm going to make the NBA" phase in 8th grade, I fell in love with the sport
+                                        in a different manner. While training improved my technical skillsets, I was also focused on building leadership
+                                        and an assertive mindset. I was especially inspired by Oklahoma City Thunder's Point Guard, Chris Paul,
+                                        who has molded the way I approach the game, how I help my teammates, and much more.
+                                        Playing 4 years of rep basketball provincially provided me invaluable
+                                        experience as a team captain and playmaker, helping my team as a whole improve and make it to
+                                        the next level.</p>
+                        </div>
+                        <div class="pando">
+                                <img src="Images/Camera.jpg">
+                                <h2 type='photo'>Photography</h2>
+                                <p>It's surprising how much a camera can expand your travelling experiences. While I may not be
+                                        the most proficient photographer, I treat it more as a hobby. Whenever we go on vacations to places
+                                         like Switzerland, or even biking locally at Toronto's Lakeshore, my camera has been able to capture vivid
+                                        memories that my family, friends and I will cherish for years to come.</p>
+                        </div>
+                </div>
+                <div class='black-box'>
+                        <div class='pando'>
+                                <img src="Images/HT6.png">
+                                <h2 type='HT6'>Citizen A</h2>
+                                <p>This past summer, my programming journey was jumpstarted at the Hack the 6ix competition.
+                                        My team and I built Citizen A, a web application that allows
+                                        car accident witnesses to submit a witness statement report upon a collision. We were inspired by the slow and obscure process
+                                        for submitting these statements, and wanted to create a more accessible method for witnesses through our smooth and intuitive UI.
+                                        Our project was recognized by companies such as
+                                        Microsoft and Intact Insurance as a viable product towards insurance-related predicaments.</p>
+                        </div>
+                        <div class='pando'>
+                                <img src="Images/TX.jpg">
+                                <h2 type='TX'>Number Game</h2>
+                                <p>As my very first C++ project, I created my first game on
+                                        Visual Studios Code. The game generates one number that represents the sum and one
+                                        number that represents the product of a specific number of unknown numbers. The challenge is for the user to
+                                        guess what the numbers are that will create the generated product and sum values. I was able to effectively learn and utilize various
+                                        functions and object-oriented programming principles to create a challenging game that increases in difficulty as the user completes each problem.</p>
+                        </div>
+                        <div class="pando">
+                                <img src="Images/Stock.png">
+                                <h2 type='Excel'>NBA Data Analytics</h2>
+                                <p>My passion towards basketball and the NBA was extended through data analytics once I discovered Python Pandas. By using NBA statistic
+                                        databases to collect player data, I created a correlational analysis on how one player affects another in terms of points, assists, efficiency
+                                        and more. This allowed me to make precise conclusions on a player's true value to their teammates, which reflects
+                                         the recruitment processes within the NBA.</p>
+                        </div>
+                </div>
+                <div class='black-box'>
+                        <div class='pando'>
+                                <img src="Images/Excel1.png">
+                                <h2 type='DECA'>Excel</h2>
+                                <p>After receiving a Udemy Certification for completing the MOS Excel Expert Course, I decided to create
+                                        my own online training module to help prepare myself for the MOS Excel Expert Exam. Most of the application
+                                        was built on JavaScript classes and embedded Excel Sheets.
+                                        The process of creating the practice problems helped accelerate my ability to grasp and better
+                                        understand advanced Excel concepts, especially in real-world settings. The module provides random
+                                        Excel problems from various categories of the actual exam.</p>
+                        </div>
+                        <div class='pando'>
+                                <img src="Images/Deca.jpg">
+                                <h2 type='DECA'>DECA</h2>
+                                <p>I love business. Creating networks, selling ideas, and entrepreneurship has always held a great deal in
+                                        what I aspire to do. Like any start-up, I've experienced great losses in opportunities during my time as a Hospitality
+                                        and Tourism contestant in the DECA competition. While barely passing the threshold score to enter Provincials,
+                                        I was able to come back stronger and take the Top Ten award to qualify for the International DECA Competition. Although holding
+                                        that award on stage was unreal, the resilience, experience in negotitiation and critical thinking I amassed during the long hours of practice with my partner
+                                        was the bigger win for me.</p>
+                        </div>
+                        <div class="pando">
+                                <img src="Images/ISPE.png">
+                                <h2 type='ISPE'>ISPE</h2>
+                                <p>The International Society for Pharmaceutical Engineering was the first group I decided to take part in
+                                        because of my interest in pharmaceuticals and biotech. I took initiative in starting Canada's first Student Chapter
+                                        at the University of Waterloo. As the Student Chapter president and ISPE Young Professional member, I am tasked with managing the executive team in creating industry-relevant
+                                        experiences for all engineerings students at the school. The network of industry professianls I've built has expanded my
+                                        understanding of the industry. </p>
+                        </div>
+                </div>
+                <div id='Exp' class='clr'></div>
+
+                <div>
+                        <h2 class='Extra'>EXPERIENCES</h2>
+                </div>
+                <div class='EX'>
+                        <div class='COOP1'>
+                                <div id='map2'></div>
+                                <img src='Images/COOP1.jpg'>
+                                <h2>Project Management Intern | 2019</h2>
+                                <p>Although my expectations going into the job wasn't high as a first year coop student, the Region of Peel ended up facilitating one of the
+                                        most well-rounded engineering experiences I've ever had. As a PM intern, I jumped into numerous ongoing building
+                                        renovation, equipment assessment, policy implementation projects. During these projects, I was often immersed in AutoCAD
+                                        P&ID drawing analysis and measurements. Building condition assessments provided me with a broader understanding
+                                        of various types of equipments such as exhaust fans or conduit line systems and how to test their functionality. Large amounts of collected
+                                        data from these assessments allowed me to utilize advanced Excel functions and Pivot Tables to help summarize the information. I was also fortunate to
+                                        have been able to initiate a window AC policy change project for all Peel residential buildings, exposing me to types of AC systems, contract/policy writing, and government
+                                        procedures on projects like these. In the end, the team atmosphere I was surrounded with during meetings and lunches allowed me to create lasting bonds I hope to reignite one day.
+                                </p>
+                        </div>
+
+                        <div class='SHAD'>
+                                <div id='map1'></div>
+                                <img class = 'ShadImage' src="Images/SHAD5.jpg">
+                                <h2>SHAD UBC | 2018</h2>
+                                <p class='SHADinfo'>"Dear SHADs,
+                                        Damn, it actually happened...You guys were everything I could have asked for and so much more.
+                                        What started off as 52 strangers and no WIFI ended with 52 new companions and, well, still no
+                                        WIFI." - Erick Yan (Instagram). If there's anything I learned during my time as a SHAD alumni, it was that
+                                        there is always more to learn. Although I was engaged in a month-long business project
+                                        to sell a flood protection device, a task to build eco-friendly robots, and plenty of early morning lectures on topics ranging from
+                                        pharmacogenomics to marathon preparation, the connections I made along the way proved to be the most valuable. The conversations
+                                        we had on our way to the top of Mount Girabaldi, the piano playing sessions during the evening, the stories we shared with one another
+                                        made this the most unexpected eye-opening experiences I've ever had in my life.</p>
+                        </div>
+                </div>
+
+                <main id = 'bottom' class='Resume'>
+                        <h2>Get A Little More Technical</h2>
+                        <a target = “_blank” id="button1" href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=d5e47c304e&attid=0.1&permmsgid=msg-a:r3321320252520526988&th=16fbfdbe967ffd34&view=att&disp=inline&realattid=f_k5lkrd0p0&saddbat=ANGjdJ9JP2c8_4BjVXG5oT54JP9rXNQtrTMR0N0QZg-1sJpscoz6yn-yP--VgNoyDyVVPwviTT4Iu5EQ3fS-XEQe2kfM5_oVhlCvKX6eCH8XxkG6Ja3p1BM5n1oSZN0PjGtiLasjcfHgf6kL2YkSp7Lgp82SpClsYrXjBjFZAOs9MxrRCGUbHvkfECnp-ttvbGBATT_4wHOvKS_6Smq1LqeOhv0gjo7NhzV8WINQWAlqg1nAsFu9yHiRZOIIqvRkFGe1dHxjIgdPyg11jkOgFpf0e4x1Z2y6G5zGO-MkvW-Ump6x05xtY7UAbgPj2aCbysHtuK0Je9bTAHN-nXJjVMQJ-fei8ZHKqsoe3QjkrnC8MER1IxT7tHmfjchV91Y1_Z-JHhiRKUg9EohVf6cRQejJontugjrdrz_9hS1leY5N5YJmtd6FpN-Qw34xHAiSb72mPalym7hgbMfdmJ48yA1Lssr1b1nUM0BlHFwGJGWn8UgAS4KQQ1r4m-h5AOa786SAg26Zs1mGtCTfAM-A2QK_MasuP-D1tj3PRwZEv1Y4j6X9NXwYkCPUqpTxST4jQHqd52F8tdGlHGmXGq0AaRVlPekvSCUYi_fBEjc3h692Aqp7MeapTAKi1cMOApa9VZBloNLuV2iFpHhLWjpAVpI34xW02tQwGlpqNMqV6FUwhHxcN1KlSUdwOZUEvsI">CV</a>
+                        <a target = “_blank” href="https://github.com/Erick-Yan">
+                        <img id = "button2" src="Images/Git.png" alt="GitHub">
+                        </a>
+                        <a target = “_blank” href="https://devpost.com/software/citizen-a">
+                        <img target = “_blank” id = "button3" src="Images/Dev.png" alt="DevPost">
+                        </a>
+                </main>
+
+                <div class='clr'></div>
+
+                <div class='email'>
+                        <h2 id='mail1'>CONTACT</h2>
+                        <h2 id = 'mail'>erick.yanzhang@gmail.com || e5yan@uwaterloo.ca</h2>
+                </div>
+
+                <footer id='main-footer'>
+                        <p>Copyright &copy; 2020, E.Y</p>
+                </footer>
+        </div>
+        <script src="scripts/slide.js"></script>
+        <div class = 'last' style='margin-top:20px;'></div>
+</body>
